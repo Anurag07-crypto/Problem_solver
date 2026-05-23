@@ -1,0 +1,23 @@
+Retrieval-Augmented Generation (RAG) is an advanced artificial intelligence technique that combines information retrieval with generative AI models. Instead of relying only on pre-trained knowledge, a RAG system first searches relevant documents or databases and then uses the retrieved information to generate accurate and context-aware responses.
+
+RAG is widely used in chatbots, search engines, customer support systems, and enterprise AI applications. It improves response quality, reduces hallucinations, and allows AI models to access up-to-date information. Common components of a RAG system include document storage, embeddings, vector databases, retrieval models, and large language models (LLMs).
+
+The process works in three steps: data retrieval, context selection, and response generation. Popular tools used in RAG development include LangChain, Pinecone, FAISS, and OpenAI models. RAG systems are highly useful for handling large datasets efficiently.
+
+Example Code:
+
+python id="k82mqp"
+from langchain.vectorstores import FAISS
+from langchain.embeddings import OpenAIEmbeddings
+
+documents = ["AI is powerful", "RAG improves accuracy"]
+
+db = FAISS.from_texts(documents, OpenAIEmbeddings())
+
+query = "What is RAG?"
+results = db.similarity_search(query)
+
+print(results)
+
+
+In this example, documents are stored in a vector database, and similarity search is used to retrieve relevant information. Overall, RAG enhances AI systems by combining knowledge retrieval with intelligent text generation, making responses more reliable and informative.

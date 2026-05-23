@@ -1,0 +1,345 @@
+10. Log & History Commands
+
+View Commit History
+
+bash
+git log
+
+
+
+
+One Line Log
+
+bash
+git log oneline
+
+
+
+
+Beautiful Graph Log
+
+bash
+git log oneline graph all
+
+
+Looks like:
+
+bash
+a1b2c3 Added login
+d4e5f6 Fixed bug
+
+
+
+
+11. Stash Commands
+
+Save Temporary Changes
+
+bash
+git stash
+
+
+
+
+Show Stashes
+
+bash
+git stash list
+
+
+
+
+Restore Stash
+
+bash
+git stash apply
+
+
+
+
+Remove Stash
+
+bash
+git stash drop
+
+
+
+
+12. Advanced Git Commands
+
+Rebase Branch
+
+bash
+git rebase main
+
+
+Moves branch on top of another branch.
+
+
+
+Cherry Pick Commit
+
+bash
+git cherrypick <commitid>
+
+
+Copies one commit from another branch.
+
+
+
+View Differences
+
+bash
+git diff
+
+
+
+
+Compare Staged Changes
+
+bash
+git diff staged
+
+
+
+
+Show Specific Commit
+
+bash
+git show <commitid>
+
+
+
+
+13. Tags Commands
+
+Create Tag
+
+bash
+git tag v1.0
+
+
+
+
+Push Tags
+
+bash
+git push origin tags
+
+
+
+
+14. Git Ignore
+
+Create .gitignore
+
+Example:
+
+bash
+__pycache__/
+.env
+venv/
+node_modules/
+
+
+Used to ignore unnecessary files.
+
+
+
+15. GitHub SSH Commands
+
+Generate SSH Key
+
+bash
+sshkeygen t ed25519 C "your@email.com"
+
+
+
+
+Start SSH Agent
+
+bash
+eval "$(sshagent s)"
+
+
+
+
+Add SSH Key
+
+bash
+sshadd ~/.ssh/id_ed25519
+
+
+
+
+16. Git Conflict Commands
+
+Check Conflict Files
+
+bash
+git status
+
+
+
+
+After Resolving Conflicts
+
+bash
+git add .
+git commit
+
+
+
+
+17. Power User Commands 😎
+
+Find Who Changed a Line
+
+bash
+git blame filename.py
+
+
+
+
+Search Commit Messages
+
+bash
+git log grep="login"
+
+
+
+
+Show All Contributors
+
+bash
+git shortlog sn
+
+
+
+
+Show Reference History
+
+bash
+git reflog
+
+
+Absolute lifesaver when you accidentally destroy commits 💀
+
+
+
+18. Git Aliases (Productivity Boost)
+
+Create Shortcut
+
+bash
+git config global alias.st status
+
+
+Now use:
+
+bash
+git st
+
+
+
+
+Useful Aliases
+
+bash
+git config global alias.cm commit
+git config global alias.co checkout
+git config global alias.br branch
+git config global alias.last "log 1 HEAD"
+
+
+
+
+19. Professional Git Workflow
+
+Feature Branch Workflow
+
+bash
+git checkout b featureauth
+git add .
+git commit m "Added auth"
+git push origin featureauth
+
+
+Then create Pull Request on [GitHub](https://github.com?utm_source=chatgpt.com).
+
+
+
+20. Most Important Commands To Memorize First
+
+Beginner Level
+
+bash
+git init
+git status
+git add .
+git commit m "message"
+git push
+git pull
+
+
+
+
+Intermediate Level
+
+bash
+git branch
+git checkout b
+git merge
+git log oneline
+git stash
+
+
+
+
+Advanced Level
+
+bash
+git rebase
+git cherrypick
+git reflog
+git reset hard
+git blame
+
+
+
+
+Real Developer Workflow Example
+
+Everyday Workflow
+
+bash
+git pull
+git checkout b newfeature
+git add .
+git commit m "Created new feature"
+git push origin newfeature
+
+
+
+
+Pro Tips 🚀
+
+Commit small changes frequently
+Write meaningful commit messages
+Never push broken code
+Learn git reflog early
+Use branches for every feature
+git status is your best friend
+Don’t fear merge conflicts — every developer fights them 😭
+
+
+
+Legendary Git Combo 🔥
+
+bash
+git add .
+git commit m "Fixed everything"
+git push
+
+
+The universal developer ritual 😎

@@ -1,0 +1,21 @@
+C++ is a powerful, high-performance programming language developed by Bjarne Stroustrup in 1979. It is an extension of the C language and supports both procedural and object-oriented programming. C++ is widely used in software development, game engines, operating systems, embedded systems, and competitive programming because of its speed and flexibility.
+
+One of the biggest advantages of C++ is its support for classes and objects, which helps programmers organize code efficiently. It also provides features like inheritance, polymorphism, encapsulation, and abstraction. The Standard Template Library (STL) offers ready-made data structures and algorithms, making coding faster and easier.
+
+C++ programs are compiled, meaning they are converted into machine code before execution. This allows applications to run very efficiently. Popular applications such as game engines, banking software, and real-time systems often use C++ for better performance.
+
+Example Code:
+
+cpp
+include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello, World!";
+    return 0;
+}
+
+
+In this program, include <iostream> allows input and output operations, cout prints text on the screen, and main() is the starting point of the program.
+
+Overall, C++ remains one of the most important programming languages in computer science. It is highly valued for its speed, versatility, and ability to handle complex applications efficiently.

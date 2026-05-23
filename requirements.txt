@@ -1,0 +1,14 @@
+google-api-python-client
+tavily
+groq
+langchain
+langchain-core
+langchain-community
+sentence-transformers
+streamlit
+fastapi
+chromadb
+uvicorn
+faiss-cpu
+python-dotenv
+python-multipart

@@ -1,0 +1,371 @@
+Complete Git Commands Handbook (Beginner → Advanced)
+
+What is Git?
+
+Git is a distributed version control system used to track code changes, collaborate with teams, and manage project history.
+
+
+
+1. Git Setup Commands
+
+Check Git Version
+
+bash
+git version
+
+
+Used to check installed Git version.
+
+
+
+Configure Username
+
+bash
+git config global user.name "Your Name"
+
+
+Sets your Git username.
+
+
+
+Configure Email
+
+bash
+git config global user.email "your@email.com"
+
+
+Sets your Git email.
+
+
+
+Check Git Configuration
+
+bash
+git config list
+
+
+Shows all Git settings.
+
+
+
+2. Repository Commands
+
+Initialize Repository
+
+bash
+git init
+
+
+Creates a new Git repository.
+
+
+
+Clone Repository
+
+bash
+git clone <repositoryurl>
+
+
+Downloads a project from GitHub.
+
+Example:
+
+bash
+git clone https://github.com/user/project.git
+
+
+
+
+3. File Tracking Commands
+
+Check Status
+
+bash
+git status
+
+
+Shows modified, staged, and untracked files.
+
+
+
+Add Single File
+
+bash
+git add filename.py
+
+
+Adds one file to staging area.
+
+
+
+Add All Files
+
+bash
+git add .
+
+
+Adds all files to staging area.
+
+
+
+Remove File from Staging
+
+bash
+git restore staged filename.py
+
+
+Unstages a file.
+
+
+
+4. Commit Commands
+
+Commit Changes
+
+bash
+git commit m "your message"
+
+
+Saves changes permanently.
+
+Example:
+
+bash
+git commit m "Added login feature"
+
+
+
+
+Add + Commit Shortcut
+
+bash
+git commit am "message"
+
+
+Adds tracked files and commits together.
+
+
+
+Amend Last Commit
+
+bash
+git commit amend m "new message"
+
+
+Changes previous commit message.
+
+
+
+5. Branch Commands
+
+Show Branches
+
+bash
+git branch
+
+
+Lists all branches.
+
+
+
+Create New Branch
+
+bash
+git branch branchname
+
+
+Example:
+
+bash
+git branch featurelogin
+
+
+
+
+Switch Branch
+
+bash
+git checkout branchname
+
+
+
+
+Create + Switch Branch
+
+bash
+git checkout b branchname
+
+
+
+
+Modern Branch Switch
+
+bash
+git switch branchname
+
+
+
+
+Create Branch Using Switch
+
+bash
+git switch c branchname
+
+
+
+
+Delete Branch
+
+bash
+git branch d branchname
+
+
+
+
+Force Delete Branch
+
+bash
+git branch D branchname
+
+
+
+
+6. Merge Commands
+
+Merge Branch
+
+bash
+git merge branchname
+
+
+Merges another branch into current branch.
+
+
+
+Abort Merge
+
+bash
+git merge abort
+
+
+Cancels merge conflicts.
+
+
+
+7. Remote Repository Commands
+
+Connect Remote Repository
+
+bash
+git remote add origin <repourl>
+
+
+Example:
+
+bash
+git remote add origin https://github.com/user/project.git
+
+
+
+
+Show Remote URLs
+
+bash
+git remote v
+
+
+
+
+Push Code First Time
+
+bash
+git push u origin main
+
+
+
+
+Push Changes
+
+bash
+git push
+
+
+
+
+Pull Latest Changes
+
+bash
+git pull
+
+
+
+
+Fetch Changes Only
+
+bash
+git fetch
+
+
+Downloads changes without merging.
+
+
+
+8. GitHub Workflow Commands
+
+Full Workflow
+
+bash
+git init
+git add .
+git commit m "Initial commit"
+git remote add origin <repourl>
+git push u origin main
+
+
+
+
+9. Undo Commands
+
+Undo File Changes
+
+bash
+git restore filename.py
+
+
+
+
+Undo All Uncommitted Changes
+
+bash
+git restore .
+
+
+
+
+Reset Last Commit (Keep Changes)
+
+bash
+git reset soft HEAD~1
+
+
+
+
+Reset Last Commit (Delete Changes)
+
+bash
+git reset hard HEAD~1
+
+
+⚠ Dangerous: permanently deletes changes.
+
+
+
+Remove Untracked Files
+
+bash
+git clean f
+
+
+
+
+

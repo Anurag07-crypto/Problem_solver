@@ -1,0 +1,21 @@
+An embedding manager is a software component used to create, organize, store, and manage embeddings in artificial intelligence systems. Embeddings are numerical vector representations of data such as text, images, audio, or documents. The embedding manager ensures that these vectors are generated consistently and efficiently for tasks like semantic search, recommendation systems, and Retrieval-Augmented Generation (RAG).
+
+The main responsibilities of an embedding manager include generating embeddings using AI models, storing them in vector databases, updating outdated embeddings, and retrieving relevant vectors during search operations. It also handles batching, caching, indexing, and optimization for faster performance.
+
+Embedding managers are commonly integrated with tools like OpenAI embeddings, Pinecone, and FAISS. They help developers maintain scalable and efficient AI pipelines for large datasets.
+
+Example Code:
+
+python id="n7v2qa"
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+texts = ["AI is powerful", "Embeddings store meaning"]
+
+embeddings = model.encode(texts)
+
+print(embeddings)
+
+
+In this example, an embedding manager uses a transformer model to convert text into vector embeddings. These vectors can later be stored in a vector database for semantic search and retrieval. Embedding managers are essential for building modern AI applications that require intelligent data understanding and fast information retrieval.

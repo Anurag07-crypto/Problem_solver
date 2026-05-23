@@ -1,0 +1,335 @@
+ Complete Keyboard Shortcut Handbook (Basic → Advanced)
+
+ Universal Shortcuts (Work Almost Everywhere)
+
+ Editing & Clipboard
+
+ Ctrl + C — Copy selected text or file
+ Ctrl + X — Cut selected text or file
+ Ctrl + V — Paste copied or cut content
+ Ctrl + Z — Undo last action
+ Ctrl + Y — Redo last undone action
+ Ctrl + A — Select all content
+ Ctrl + S — Save current file
+ Ctrl + P — Print document/page
+ Ctrl + N — Create new file/window
+ Ctrl + O — Open file
+ Ctrl + F — Find text
+ Ctrl + H — Replace text
+ Ctrl + W — Close current tab/window
+ Ctrl + Shift + T — Reopen recently closed tab
+ Ctrl + Backspace — Delete whole word to the left
+ Ctrl + Delete — Delete whole word to the right
+
+
+
+Text Navigation Shortcuts
+
+ Home — Move cursor to beginning of line
+ End — Move cursor to end of line
+ Ctrl + Home — Go to top of document
+ Ctrl + End — Go to bottom of document
+ Ctrl + Left Arrow — Move one word left
+ Ctrl + Right Arrow — Move one word right
+ Shift + Arrow Keys — Select text
+ Ctrl + Shift + Arrow — Select entire words
+ Page Up — Scroll up
+ Page Down — Scroll down
+
+
+
+Windows Keyboard Shortcuts
+
+System & Desktop
+
+ Windows — Open Start menu
+ Windows + D — Show desktop
+ Windows + E — Open File Explorer
+ Windows + L — Lock computer
+ Windows + R — Open Run dialog
+ Windows + I — Open Settings
+ Windows + S — Open Search
+ Windows + Tab — Open Task View
+ Alt + Tab — Switch between apps
+ Ctrl + Shift + Esc — Open Task Manager
+ Alt + F4 — Close active app
+ Windows + Shift + S — Take screenshot/snipping tool
+ Windows + Print Screen — Save screenshot automatically
+ Windows + V — Open clipboard history
+ Windows + . — Open emoji panel 😎
+ Windows + G — Open Xbox Game Bar
+ Windows + K — Connect to wireless display/device
+ Windows + P — Change projection mode
+ Windows + U — Accessibility settings
+ Windows + Pause — Open system info
+
+
+
+File Explorer
+
+ Ctrl + N — New explorer window
+ Ctrl + Shift + N — Create new folder
+ Alt + Enter — File properties
+ F2 — Rename file/folder
+ F5 — Refresh
+ Delete — Move file to recycle bin
+ Shift + Delete — Permanently delete file
+ Ctrl + Mouse Scroll — Change icon size
+
+
+
+Browser Shortcuts (Chrome, Edge, Firefox)
+
+Tabs & Windows
+
+ Ctrl + T — Open new tab
+ Ctrl + Shift + T — Reopen closed tab
+ Ctrl + W — Close current tab
+ Ctrl + Shift + N — Open incognito/private window
+ Ctrl + Tab — Next tab
+ Ctrl + Shift + Tab — Previous tab
+ Ctrl + 1-8 — Switch to specific tab
+ Ctrl + 9 — Last tab
+
+ Browsing
+
+ Ctrl + L — Highlight address bar
+ Ctrl + R — Refresh page
+ Ctrl + Shift + R — Hard refresh
+ Ctrl + D — Bookmark page
+ Ctrl + J — Open downloads
+ Ctrl + H — Open browsing history
+ Ctrl + U — View page source
+ F12 — Open Developer Tools
+ Ctrl + + — Zoom in
+ Ctrl + - — Zoom out
+ Ctrl + 0 — Reset zoom
+
+
+
+ Microsoft Word Shortcuts
+
+ Formatting
+
+ Ctrl + B — Bold text
+ Ctrl + I — Italic text
+ Ctrl + U — Underline text
+ Ctrl + Shift + > — Increase font size
+ Ctrl + Shift + < — Decrease font size
+ Ctrl + E — Center align
+ Ctrl + L — Left align
+ Ctrl + R — Right align
+ Ctrl + J — Justify text
+
+Document Tools
+
+ Ctrl + K — Insert hyperlink
+ Ctrl + Enter — New page
+ Ctrl + Shift + C — Copy formatting
+ Ctrl + Shift + V — Paste formatting
+ F7 — Spell check
+ Shift + F3 — Change text case
+
+
+
+Excel Shortcuts
+
+Basic Excel
+
+ Ctrl + Arrow Keys — Jump to data edge
+ Ctrl + Shift + Arrow — Select large data range
+ Ctrl + Space — Select column
+ Shift + Space — Select row
+ Ctrl + ; — Insert current date
+ Ctrl + Shift + ; — Insert current time
+ Alt + = — AutoSum
+ F2 — Edit cell
+ Ctrl + 1 — Format cells
+ Ctrl + Page Up/Down — Switch worksheet
+
+Advanced Excel
+
+ Ctrl + T — Create table
+ Alt + H + O + I — Auto-fit column width
+ Ctrl + Shift + L — Apply/remove filters
+ Alt + F1 — Create chart
+ F4 — Repeat last action / lock cell reference $A$1
+ Ctrl + Shift + $ — Currency format
+ Ctrl + Shift + % — Percentage format
+
+
+
+VS Code Shortcuts
+
+File Management
+
+ Ctrl + P — Quick file search
+ Ctrl + Shift + P — Command palette
+ Ctrl + N — New file
+ Ctrl + Shift + N — New window
+ Ctrl + S — Save file
+
+ Coding
+
+ Ctrl + / — Toggle comment
+ Alt + Up/Down — Move line
+ Shift + Alt + Down — Duplicate line
+ Ctrl + D — Select next occurrence
+ Ctrl + Shift + K — Delete line
+ Ctrl + Space — Trigger suggestions
+ F12 — Go to definition
+ Alt + Left/Right — Navigate back/forward
+ Ctrl + Shift + F — Search in files
+ Ctrl + Shift + E — Explorer panel
+ Ctrl +  — Open terminal
+ Ctrl + B — Toggle sidebar
+
+
+
+Python/Jupyter Notebook Shortcuts
+
+Command Mode
+
+ A — Insert cell above
+ B — Insert cell below
+ DD — Delete cell
+ M — Convert to markdown
+ Y — Convert to code
+ Shift + Enter — Run cell and move next
+ Ctrl + Enter — Run cell
+ Esc — Command mode
+
+
+
+Terminal / CMD Shortcuts
+
+Windows CMD
+
+ Ctrl + C — Stop command
+ Ctrl + V — Paste
+ Arrow Up — Previous command
+ cls — Clear terminal
+ Tab — Auto-complete filename
+
+Linux Terminal
+
+ Ctrl + A — Move to line start
+ Ctrl + E — Move to line end
+ Ctrl + U — Delete line left
+ Ctrl + K — Delete line right
+ Ctrl + L — Clear terminal
+ Ctrl + R — Search command history
+
+
+
+Advanced Developer Shortcuts
+
+ Git Shortcuts
+
+ git init — Initialize repository
+ git clone — Clone repository
+ git status — Check changes
+ git add . — Add all files
+ git commit -m "message" — Commit changes
+ git push — Upload changes
+ git pull — Download updates
+ git branch — Show branches
+ git checkout branch-name — Switch branch
+ git merge — Merge branches
+
+
+
+MacOS Shortcuts
+
+Replace Ctrl with Command (⌘) in most cases.
+
+ ⌘ + C — Copy
+ ⌘ + V — Paste
+ ⌘ + Space — Spotlight search
+ ⌘ + Tab — Switch apps
+ ⌘ + Shift + 4 — Screenshot selection
+ ⌘ + Q — Quit app
+ ⌘ + W — Close window
+ ⌘ + Option + Esc — Force quit
+
+
+
+Power User Shortcuts
+
+Multi-tasking
+
+ Windows + Left/Right — Snap window
+ Windows + Up — Maximize window
+ Windows + Down — Minimize window
+ Windows + Ctrl + D — New virtual desktop
+ Windows + Ctrl + Left/Right — Switch desktops
+ Windows + Ctrl + F4 — Close desktop
+
+
+
+AI Engineer / Coding Productivity Shortcuts
+
+ChatGPT & AI Workflow
+
+ Ctrl + Shift + V — Paste without formatting
+ Ctrl + K — AI command/search in many editors
+ Tab — Accept AI autocomplete
+ Shift + Tab — Reverse indentation
+ Ctrl + Shift + Space — Parameter hints in IDEs
+
+
+
+Function Keys (F1–F12)
+
+ F1 — Help menu
+ F2 — Rename
+ F3 — Search
+ F4 — Address bar repeat / repeat action
+ F5 — Refresh
+ F6 — Switch screen elements
+ F7 — Spell check
+ F8 — Boot options (Windows startup)
+ F9 — Refresh fields
+ F10 — Activate menu bar
+ F11 — Full screen
+ F12 — Developer tools / Save As
+
+
+
+Secret Productivity Combos 😏
+
+ Ctrl + Shift + Esc — Instant Task Manager when PC freezes
+ Windows + V — Clipboard history = underrated superpower
+ Alt + Tab — Looks like hacking when done fast
+ Ctrl + Shift + T — Saves lives after accidental tab close
+ Windows + . — Emoji panel for elite texting 😎
+
+
+
+ Most Important Shortcuts To Master First
+
+Beginner Priority
+
+1. Ctrl + C
+2. Ctrl + V
+3. Ctrl + Z
+4. Ctrl + S
+5. Alt + Tab
+
+Intermediate Priority
+
+1. Ctrl + Shift + T
+2. Windows + Shift + S
+3. Ctrl + F
+4. Ctrl + Backspace
+5. Ctrl + L
+
+Advanced Priority
+
+1. Ctrl + Shift + Esc
+2. F12
+3. Ctrl + Shift + P
+4. Alt + Tab
+5. Windows + Tab
+
+Your keyboard is basically a cheat code device once muscle memory kicks in 

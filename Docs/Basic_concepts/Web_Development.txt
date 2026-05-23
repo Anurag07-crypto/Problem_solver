@@ -1,0 +1,22 @@
+Web development is the process of creating and maintaining websites and web applications that run on the internet. It includes designing webpages, writing code, managing databases, and improving user experience. Web development is generally divided into three parts: front-end, back-end, and full-stack development.
+
+Front-end development focuses on the visual part of a website that users interact with. Technologies like HTML, CSS, and JavaScript are commonly used to create responsive and attractive webpages. Back-end development handles server-side operations, databases, and application logic using languages such as Python, PHP, Java, or Node.js.
+
+Modern web development also uses frameworks like React, Angular, and Django to make development faster and more efficient. Websites today support features such as online shopping, user authentication, real-time chat, and cloud storage.
+
+Example Code:
+
+html id="fg7k2m"
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Welcome to Web Development</h1>
+    <p>Hello, World!</p>
+</body>
+</html>
+
+
+In this example, HTML is used to create a simple webpage with a heading and a paragraph. Web development plays an important role in business, education, entertainment, and communication, making it one of the most valuable skills in the digital world today.

@@ -1,0 +1,24 @@
+A retriever is an important component in artificial intelligence and Retrieval-Augmented Generation (RAG) systems that searches and fetches relevant information from a database or document collection. Its main purpose is to identify the most useful data related to a user query before passing it to a language model for response generation.
+
+Retrievers work by converting user queries and stored documents into embeddings, which are numerical vector representations. The system then performs similarity matching to find documents with meanings closest to the query. This approach improves accuracy and helps AI systems provide context-aware answers.
+
+There are different types of retrievers, including keyword-based retrievers, dense retrievers, and hybrid retrievers. Popular tools used for retrieval include FAISS, Pinecone, and LangChain. Retrievers are widely used in chatbots, recommendation systems, enterprise search, and question-answering applications.
+
+Example Code:
+
+python id="r8m1zx"
+from langchain.vectorstores import FAISS
+from langchain.embeddings import OpenAIEmbeddings
+
+texts = ["AI improves automation", "Retrievers find relevant data"]
+
+db = FAISS.from_texts(texts, OpenAIEmbeddings())
+
+retriever = db.as_retriever()
+
+results = retriever.get_relevant_documents("What does AI do?")
+
+print(results)
+
+
+In this example, a retriever searches stored document embeddings and returns the most relevant information related to the query. Retrievers are essential in modern AI systems because they improve response quality, reduce incorrect outputs, and enable efficient knowledge retrieval from large datasets.
