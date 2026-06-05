@@ -40,6 +40,7 @@ def yt_search(query:str):
         likes = int(item["statistics"].get("likeCount", 0))
         views = int(item["statistics"].get("viewCount", 0))
 
+        video_id = item["id"]
         engagement_rate = (
         (likes / views) * 100
         if views > 0 else 0
@@ -49,7 +50,8 @@ def yt_search(query:str):
         "title": item["snippet"]["title"],
         "likes": likes,
         "views": views,
-        "engagement_rate": engagement_rate
+        "engagement_rate": engagement_rate,
+        "link": f"https://www.youtube.com/watch?v={video_id}"
     })
 
     videos.sort(
@@ -66,4 +68,3 @@ def yt_search(query:str):
     logger.info("Youtube videos info is ready")
     return videos
 
-yt_search()

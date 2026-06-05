@@ -14,7 +14,8 @@ def Ingestion():
     loader = DirectoryLoader(
         path=Dir_path,
         glob="**/*.txt",
-        loader_cls=TextLoader
+        loader_cls=TextLoader,
+        loader_kwargs={"encoding": "utf-8"}
     )
     
     load_file = loader.load()
@@ -27,10 +28,10 @@ def Splitter(list_of_docs, chunk_size:int = 1000 ,chunk_overlap:int=200):
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap,
-        length_fun= len,
+        length_function=len,
         separators=["\n\n\n", "\n\n", "\n", ""]
     )
 
-    chunks = text_splitter.split(list_of_docs)
+    chunks = text_splitter.split_documents(list_of_docs)
     logger.info("Docs_splitted_successfully")
     return chunks

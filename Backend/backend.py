@@ -31,7 +31,8 @@ def chat(request:Request):
     """
     
     try:
-        response = llm_response(request.query, retriever=Retriever)
+        retriever_instance = Retriever()
+        response = llm_response(request.query, retriever=retriever_instance)
         logger.info("Request Accepted Successfully")        
    
         # Handle Unicode encoding properly

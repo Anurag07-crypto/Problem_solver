@@ -19,12 +19,12 @@ class VectorStore:
     """
     
     def __init__(self, persistant_dir:str=persistant_path,
-                 collection_name:str="Text files"):
+                 collection_name:str="text_files"):
         self.persistant_dir = persistant_dir
         self.collection_name = collection_name
         self.client = None
         self.collection = None
-        self._initialize_store
+        self.initialize_store()
     
     def initialize_store(self):
         """
@@ -70,10 +70,10 @@ class VectorStore:
         document_texts = []
         embedding_lists = []
         
-        for i, (doc, embedding) in enumerate(documents, embeddings):
+        for i, (doc, embedding) in enumerate(zip(documents, embeddings)):
             ids = f"doc_{uuid.uuid4().hex[:8]}_19"
             doc_ids.append(ids)
-            metadata = dict(doc.metadata) if hasattr(doc, metadata) else {}
+            metadata = dict(doc.metadata) 
             metadata["doc_index"] = i
             metadata["content_length"] = len(doc.page_content)
             metadatas.append(metadata)

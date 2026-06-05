@@ -1,0 +1,207 @@
+2026-06-01 13:19:52 | ERROR    | backend | Unexpected error in /chat: Retriever.retrieve() missing 1 required positional argument: 'query'
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\Backend\backend.py", line 34, in chat
+    response = llm_response(request.query, retriever=Retriever)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\retriever.py", line 99, in llm_response
+    context = retriever.retrieve(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Retriever.retrieve() missing 1 required positional argument: 'query'
+2026-06-01 13:21:26 | ERROR    | backend | Unexpected error in /chat: Retriever.retrieve() missing 1 required positional argument: 'query'
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\Backend\backend.py", line 34, in chat
+    response = llm_response(request.query, retriever=Retriever)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\retriever.py", line 99, in llm_response
+    context = retriever.retrieve(query=query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Retriever.retrieve() missing 1 required positional argument: 'query'
+2026-06-01 13:22:17 | ERROR    | backend | Unexpected error in /chat: Retriever.retrieve() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\Backend\backend.py", line 34, in chat
+    response = llm_response(request.query, retriever=Retriever)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\retriever.py", line 99, in llm_response
+    context = retriever.retrieve(query=query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Retriever.retrieve() missing 1 required positional argument: 'self'
+2026-06-01 13:26:04 | ERROR    | backend | Unexpected error in /chat: Retriever.retrieve() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\Backend\backend.py", line 34, in chat
+    retriever_instance = Retriever()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\retriever.py", line 99, in llm_response
+    context = retriever.retrieve(query=query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Retriever.retrieve() missing 1 required positional argument: 'self'
+2026-06-01 13:26:41 | ERROR    | backend | Unexpected error in /chat: 'VectorStore' object has no attribute '_initialize_store'
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\Backend\backend.py", line 34, in chat
+    retriever_instance = Retriever()
+                         ^^^^^^^^^^^
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\retriever.py", line 23, in __init__
+    self.vector_store = vector_store if vector_store is not None else VectorStore()
+                                                                      ^^^^^^^^^^^^^
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\vector_store.py", line 27, in __init__
+    self._initialize_store
+AttributeError: 'VectorStore' object has no attribute '_initialize_store'
+2026-06-01 13:27:58 | ERROR    | backend | Unexpected error in /chat: 'VectorStore' object has no attribute '_initialize_store'
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\Backend\backend.py", line 34, in chat
+    retriever_instance = Retriever()
+                         ^^^^^^^^^^^
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\retriever.py", line 23, in __init__
+    self.vector_store = vector_store if vector_store is not None else VectorStore()
+                                                                      ^^^^^^^^^^^^^
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\vector_store.py", line 27, in __init__
+    self._initialize_store()
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'VectorStore' object has no attribute '_initialize_store'
+2026-06-01 13:30:45 | ERROR    | backend | Unexpected error in /chat: Validation error: name: Expected a name containing 3-512 characters from [a-zA-Z0-9._-], starting and ending with a character in [a-zA-Z0-9]. Got: Text files
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\Backend\backend.py", line 34, in chat
+    retriever_instance = Retriever()
+                         ^^^^^^^^^^^
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\retriever.py", line 23, in __init__
+    self.vector_store = vector_store if vector_store is not None else VectorStore()
+                                                                      ^^^^^^^^^^^^^
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\vector_store.py", line 27, in __init__
+    self.initialize_store()
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\vector_store.py", line 40, in initialize_store
+    self.collection = self.client.get_or_create_collection(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\First_production_app\Problem_solver\.venv\Lib\site-packages\chromadb\api\client.py", line 361, in get_or_create_collection
+    model = self._server.get_or_create_collection(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\First_production_app\Problem_solver\.venv\Lib\site-packages\chromadb\api\rust.py", line 313, in get_or_create_collection
+    return self.create_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\First_production_app\Problem_solver\.venv\Lib\site-packages\chromadb\api\rust.py", line 244, in create_collection
+    collection = self.bindings.create_collection(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+chromadb.errors.InvalidArgumentError: Validation error: name: Expected a name containing 3-512 characters from [a-zA-Z0-9._-], starting and ending with a character in [a-zA-Z0-9]. Got: Text files
+2026-06-01 13:30:46 | ERROR    | backend | Unexpected error in /chat: Validation error: name: Expected a name containing 3-512 characters from [a-zA-Z0-9._-], starting and ending with a character in [a-zA-Z0-9]. Got: Text files
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\Backend\backend.py", line 34, in chat
+    retriever_instance = Retriever()
+                         ^^^^^^^^^^^
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\retriever.py", line 23, in __init__
+    self.vector_store = vector_store if vector_store is not None else VectorStore()
+                                                                      ^^^^^^^^^^^^^
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\vector_store.py", line 27, in __init__
+    self.initialize_store()
+  File "c:\Users\Lenovo\Desktop\First_production_app\Problem_solver\RAG\vector_store.py", line 40, in initialize_store
+    self.collection = self.client.get_or_create_collection(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\First_production_app\Problem_solver\.venv\Lib\site-packages\chromadb\api\client.py", line 361, in get_or_create_collection
+    model = self._server.get_or_create_collection(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\First_production_app\Problem_solver\.venv\Lib\site-packages\chromadb\api\rust.py", line 313, in get_or_create_collection
+    return self.create_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Desktop\First_production_app\Problem_solver\.venv\Lib\site-packages\chromadb\api\rust.py", line 244, in create_collection
+    collection = self.bindings.create_collection(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+chromadb.errors.InvalidArgumentError: Validation error: name: Expected a name containing 3-512 characters from [a-zA-Z0-9._-], starting and ending with a character in [a-zA-Z0-9]. Got: Text files
+2026-06-01 13:40:51 | INFO     | RAG.data_ingestion | Directory ingested
+2026-06-01 13:42:29 | INFO     | RAG.data_ingestion | Directory ingested
+2026-06-01 13:42:35 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 13:42:35 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 13:47:42 | INFO     | RAG.data_ingestion | Directory ingested
+2026-06-01 13:47:48 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 13:47:48 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 13:48:47 | INFO     | RAG.data_ingestion | Directory ingested
+2026-06-01 13:48:53 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 13:48:53 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 13:49:35 | INFO     | RAG.data_ingestion | Directory ingested
+2026-06-01 13:49:41 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 13:49:41 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 13:49:41 | INFO     | RAG.data_ingestion | Docs_splitted_successfully
+2026-06-01 13:50:05 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 13:51:25 | INFO     | RAG.data_ingestion | Directory ingested
+2026-06-01 13:51:31 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 13:51:31 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 13:51:31 | INFO     | RAG.data_ingestion | Docs_splitted_successfully
+2026-06-01 13:51:49 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 13:52:27 | INFO     | RAG.data_ingestion | Directory ingested
+2026-06-01 13:52:33 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 13:52:33 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 13:52:33 | INFO     | RAG.data_ingestion | Docs_splitted_successfully
+2026-06-01 13:52:51 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 13:52:51 | INFO     | RAG.vector_store | Document Added successfully
+2026-06-01 13:52:51 | INFO     | RAG.retriever | DATA LOADED successfully: 81 chunks indexed
+2026-06-01 13:53:11 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 13:53:17 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 13:53:17 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 13:53:17 | INFO     | RAG.retriever | Retrieved 1 documents
+2026-06-01 13:53:19 | INFO     | backend | Request Accepted Successfully
+2026-06-01 13:57:18 | INFO     | RAG.data_ingestion | Directory ingested
+2026-06-01 13:57:24 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 13:57:24 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 13:57:24 | INFO     | RAG.data_ingestion | Docs_splitted_successfully
+2026-06-01 13:57:43 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 13:57:43 | INFO     | RAG.vector_store | Document Added successfully
+2026-06-01 13:57:43 | INFO     | RAG.retriever | DATA LOADED successfully: 81 chunks indexed
+2026-06-01 13:57:49 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 13:57:54 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 13:57:54 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 13:57:54 | INFO     | RAG.retriever | Retrieved 1 documents
+2026-06-01 13:57:55 | INFO     | backend | Request Accepted Successfully
+2026-06-01 13:58:10 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 13:58:15 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 13:58:15 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 13:58:15 | INFO     | RAG.retriever | Retrieved 1 documents
+2026-06-01 13:58:16 | INFO     | backend | Request Accepted Successfully
+2026-06-01 13:59:34 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 13:59:40 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 13:59:40 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 13:59:40 | INFO     | RAG.retriever | Retrieved 1 documents
+2026-06-01 13:59:40 | INFO     | backend | Request Accepted Successfully
+2026-06-01 14:09:00 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:12:06 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:13:26 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:13:48 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:16:39 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:17:46 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:18:12 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:20:02 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:22:22 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:36:24 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 14:36:29 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 14:36:29 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 14:36:29 | INFO     | RAG.retriever | Retrieved 1 documents
+2026-06-01 14:36:29 | INFO     | backend | Request Accepted Successfully
+2026-06-01 14:36:29 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 14:36:35 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 14:36:35 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 14:36:35 | INFO     | RAG.retriever | Retrieved 1 documents
+2026-06-01 14:36:35 | INFO     | backend | Request Accepted Successfully
+2026-06-01 14:36:35 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 14:36:40 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 14:36:40 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 14:36:40 | INFO     | RAG.retriever | Retrieved 1 documents
+2026-06-01 14:36:40 | INFO     | backend | Request Accepted Successfully
+2026-06-01 14:36:40 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 14:36:46 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 14:36:46 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 14:36:46 | INFO     | RAG.retriever | Retrieved 1 documents
+2026-06-01 14:36:46 | INFO     | backend | Request Accepted Successfully
+2026-06-01 14:44:39 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:45:31 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 14:45:37 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 14:45:37 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 14:45:37 | INFO     | RAG.retriever | Retrieved 1 documents
+2026-06-01 14:45:37 | INFO     | backend | Request Accepted Successfully
+2026-06-01 14:46:07 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-01 14:46:13 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-01 14:46:13 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-01 14:46:13 | INFO     | RAG.retriever | Retrieved 1 documents
+2026-06-01 14:46:13 | INFO     | backend | Request Accepted Successfully
+2026-06-01 14:46:38 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:50:38 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:51:27 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-01 14:51:27 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-02 12:18:50 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-02 12:33:34 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-02 12:33:52 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-02 12:34:21 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
