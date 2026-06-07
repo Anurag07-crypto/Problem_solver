@@ -62,18 +62,6 @@ st.markdown("""
             font-weight: bold;
             font-size: 1.1em;
         }
-        .engagement-bar {
-            width: 100%;
-            height: 6px;
-            background-color: #e0e0e0;
-            border-radius: 3px;
-            margin: 10px 0;
-            overflow: hidden;
-        }
-        .engagement-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #1f77e6, #00d4ff);
-        }
     </style>
 """, unsafe_allow_html=True)
 
@@ -110,35 +98,7 @@ if user_query:
                 likes = video['likes']
                 
                 # Create video card HTML
-                card_html = f"""
-                <div class="video-card">
-                    <div style="display: flex; justify-content: space-between; align-items: start;">
-                        <div style="flex: 1;">
-                            <span class="video-rank">#{rank}</span>
-                            <div class="video-title">{video_title}</div>
-                        </div>
-                        <div style="text-align: right;">
-                            <div class="stat-value" style="font-size: 1.3em;">{engagement_rate:.2f}%</div>
-                            <div class="stat-label">Engagement</div>
-                        </div>
-                    </div>
-                    
-                    <div class="engagement-bar">
-                        <div class="engagement-fill" style="width: {min(engagement_rate * 10, 100)}%;"></div>
-                    </div>
-                    
-                    <div class="video-stats">
-                        <div class="stat-item">
-                            <span class="stat-label">👁️ Views:</span>
-                            <span class="stat-value">{views:,}</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">👍 Likes:</span>
-                            <span class="stat-value">{likes:,}</span>
-                        </div>
-                    </div>
-                </div>
-                """
+                card_html = f"""<div class="video-card"><div style="display: flex; justify-content: space-between; align-items: start;"><div style="flex: 1;"><span class="video-rank">#{rank}</span><div class="video-title">{video_title}</div></div><div style="text-align: right;"><div class="stat-value" style="font-size: 1.3em;">{engagement_rate:.2f}%</div><div class="stat-label">Engagement</div></div></div><div class="video-stats"><div class="stat-item"><span class="stat-label">👁️ Views:</span><span class="stat-value">{views:,}</span></div><div class="stat-item"><span class="stat-label">👍 Likes:</span><span class="stat-value">{likes:,}</span></div></div></div>"""
                 
                 st.markdown(card_html, unsafe_allow_html=True)
                 st.markdown(f'<a href="{video_link}" target="_blank" style="display: inline-block; padding: 8px 16px; background-color: #1f77e6; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">▶️ Watch on YouTube</a>', unsafe_allow_html=True)

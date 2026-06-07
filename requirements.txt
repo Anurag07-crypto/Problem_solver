@@ -12,3 +12,4 @@ uvicorn
 faiss-cpu
 python-dotenv
 python-multipart
+langchain-text-splitters

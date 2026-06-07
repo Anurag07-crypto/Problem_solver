@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 # Backend API configuration
-BACKEND_URL = "http://127.0.0.1:8000/chat"
+BACKEND_URL = "http://localhost:8000/chat"
 
 # Custom CSS
 st.markdown("""

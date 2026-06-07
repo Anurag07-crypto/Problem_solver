@@ -1,6 +1,6 @@
 from sentence_transformers import SentenceTransformer
 import numpy as np  
-from typing_extensions import List
+from typing import List
 from logger import get_logger
 
 logger = get_logger(__name__)

@@ -205,3 +205,130 @@ chromadb.errors.InvalidArgumentError: Validation error: name: Expected a name co
 2026-06-02 12:33:34 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
 2026-06-02 12:33:52 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
 2026-06-02 12:34:21 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:45:28 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:45:49 | INFO     | backend | Received query: what is python...
+2026-06-07 13:45:49 | INFO     | RAG.retriever | Starting RAG initialization...
+2026-06-07 13:45:49 | INFO     | RAG.data_ingestion | Directory ingested
+2026-06-07 13:45:55 | INFO     | RAG.embedding_manager | BAAI/bge-small-en-v1.5 model is loaded
+2026-06-07 13:45:56 | INFO     | RAG.vector_store | Vector Store Initialized
+2026-06-07 13:45:56 | INFO     | RAG.data_ingestion | Docs_splitted_successfully
+2026-06-07 13:45:56 | INFO     | RAG.retriever | Generated 81 chunks
+2026-06-07 13:45:56 | INFO     | RAG.retriever | Storing chunks in vector store...
+2026-06-07 13:45:57 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:45:58 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:45:58 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:45:58 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:45:58 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:45:59 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:45:59 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:45:59 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:45:59 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:00 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:00 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:00 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:01 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:01 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:01 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:01 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:02 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:02 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:02 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:02 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:03 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:03 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:03 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:03 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:04 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:04 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:04 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:05 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:05 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:05 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:05 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:06 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:06 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:06 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:06 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:07 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:07 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:07 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:08 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:08 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:08 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:08 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:09 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:09 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:09 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:09 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:10 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:10 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:10 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:11 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:11 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:11 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:12 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:13 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:13 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:14 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:14 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:15 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:15 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:15 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:16 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:16 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:16 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:17 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:17 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:17 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:18 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:18 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:18 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:18 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:19 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:19 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:19 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:20 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:20 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:21 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:21 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:22 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:22 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:23 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:23 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:23 | INFO     | RAG.retriever | Successfully stored 81 chunks in vector store
+2026-06-07 13:46:23 | INFO     | RAG.retriever | RAG initialization completed successfully
+2026-06-07 13:46:23 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:46:23 | INFO     | RAG.retriever | Retrieved 1 documents
+2026-06-07 13:46:24 | INFO     | backend | Request processed successfully
+2026-06-07 13:47:29 | INFO     | backend | Received query: explain me c++...
+2026-06-07 13:47:29 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:47:29 | INFO     | RAG.retriever | Retrieved 1 documents
+2026-06-07 13:47:30 | INFO     | backend | Request processed successfully
+2026-06-07 13:47:48 | INFO     | backend | Received query: more about it...
+2026-06-07 13:47:48 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:47:49 | INFO     | backend | Request processed successfully
+2026-06-07 13:48:14 | INFO     | backend | Received query: explain me OOps concept...
+2026-06-07 13:48:14 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:48:15 | INFO     | backend | Request processed successfully
+2026-06-07 13:48:48 | INFO     | backend | Received query: explain me OOPS concept...
+2026-06-07 13:48:48 | INFO     | RAG.embedding_manager | Embeddings Generated
+2026-06-07 13:48:48 | INFO     | backend | Request processed successfully
+2026-06-07 13:49:52 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:49:52 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:51:59 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:52:03 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:52:53 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:54:00 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:54:16 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:54:44 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:56:01 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:56:33 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:58:15 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:58:19 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:58:25 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:58:38 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:58:53 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:59:00 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:59:37 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 13:59:57 | INFO     | Tools.yt_video_finder | Youtube videos info is ready
+2026-06-07 14:00:26 | INFO     | Tools.yt_video_finder | Youtube videos info is ready

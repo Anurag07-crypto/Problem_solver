@@ -19,4 +19,5 @@ dependencies = [
     "streamlit>=1.57.0",
     "tavily>=1.1.0",
     "uvicorn>=0.47.0",
+    "langchain-text-splitters>=2.0.0"
 ]
